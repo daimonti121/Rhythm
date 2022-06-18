@@ -14,10 +14,6 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-}
-
 html, body {
     height: 100%;
     min-width: 320px;
@@ -29,6 +25,14 @@ body {
     color: #666666;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .wrapper {
     min-height: 100%;
     display: flex;
@@ -36,7 +40,7 @@ body {
     overflow: hidden;
 }
 
-.main {
+.page {
     flex: 1 1 auto;
 }
 
@@ -44,4 +48,39 @@ body {
     max-width: 1230px;
     margin: 0 auto;
     padding: 0px 15px;
+}
+
+/* ---------------------------------------------------------- */
+
+
+.header {}
+
+.header__container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    gap: 131px;
+    align-items: center;
+    min-height: 152px;
+}
+
+.header__logo {}
+
+.header__menu {}
+
+.menu {}
+
+.menu__list {
+    display: flex;
+    gap: 56px;
+}
+.menu__item {}
+
+.menu__link {
+    color: rgba(18, 18, 18, 0.4);
+    font-weight: 500;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
 }
