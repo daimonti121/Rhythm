@@ -2,7 +2,8 @@
 
 @font-face {
     font-family: CalSans;
-    src: url(../gitara/fonts/webfonts/CalSans-SemiBold.woff) format("woff"), url(../gitara/fonts/webfonts/CalSans-SemiBold.woff2) format("woff2");
+    font-display: swap;
+    src: url(/fonts/webfonts/CalSans.woff2) format("woff2"), url(/fonts/webfonts/CalSans.woff) format("woff");
     font-weight: 400;
     font-style: normal;
 }
@@ -33,6 +34,8 @@ a {
     text-decoration: none;
 }
 
+/* ---------------------------------------------------------- */
+
 .wrapper {
     min-height: 100%;
     display: flex;
@@ -40,9 +43,16 @@ a {
     overflow: hidden;
 }
 
+/* ---------------------------------------------------------- */
+
 .page {
     flex: 1 1 auto;
 }
+
+.page__main {
+}
+
+/* ---------------------------------------------------------- */
 
 [class*="__container"] {
     max-width: 1230px;
@@ -53,7 +63,13 @@ a {
 /* ---------------------------------------------------------- */
 
 
-.header {}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
 
 .header__container {
     padding-top: 5px;
@@ -83,4 +99,49 @@ a {
 
 .menu__link:hover {
     text-decoration: underline;
+}
+
+/* ---------------------------------------------------------- */
+
+.main {
+    padding-bottom: 80px;
+}
+.main__container {
+    display: flex;
+}
+.main__content {
+    align-self: flex-end;
+    padding-bottom: 60px;
+    padding-right: 20px;
+}
+.main__title {
+    font-family: CalSans;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 67px;
+    color: #121212;
+}
+.main__text {
+}
+.main__actions {
+}
+.actions-main {
+}
+.actions-main__button {
+    padding: 18.5px 48px;
+    background-color: #FF6428;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.actions-main__icon {
+}
+.main__decor {
+}
+.decor-main {
+}
+.decor-main__image {
 }
